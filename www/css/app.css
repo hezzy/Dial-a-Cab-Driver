@@ -1,0 +1,68 @@
+/* Your app styles here */
+
+/* Left Panel right border when it is visible by breakpoint */
+.panel-left.panel-visible-by-breakpoint:before {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: rgba(0,0,0,0.1);
+  content: '';
+  z-index: 6000;
+}
+
+/* Hide navbar link which opens left panel when it is visible by breakpoint */
+.panel-left.panel-visible-by-breakpoint ~ .view .navbar .panel-open[data-panel="left"] {
+  display: none;
+}
+
+/*
+  Extra borders for main view and left panel for iOS theme when it behaves as panel (before breakpoint size)
+*/
+.ios .panel-left:not(.panel-visible-by-breakpoint).panel-active ~ .view-main:before,
+.ios .panel-left:not(.panel-visible-by-breakpoint).panel-closing ~ .view-main:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 1px;
+  background: rgba(0,0,0,0.1);
+  content: '';
+  z-index: 6000;
+}
+.red{color:red !important}
+.green{color:green !important}
+
+.md .login-screen-title {
+
+    font-size: 24px;
+
+}
+.md .toolbar {
+    height: auto;
+	padding:20px;
+	padding-top:0px
+}
+.home.block-title{margin-top:140px}
+.toolbar-inner {
+}
+
+.text-center{text-align:center}
+.text-right{text-align:right}
+.text-left{text-align:left}
+.text-justify{text-align:justify}
+
+h3.appFullName{margin-bottom:5px;}
+span.appWallet{font-weight:200; font-size:24px}
+.active-trip h2{margin-bottom:0px;}
+.tmr{font-size:20px; font-weight:200; color:green}
+.my-list {margin-top:0px !important;}
+.my-list ul li{padding:14px 0; border-bottom:1px #ddd solid}
+
+.pimg{margin: 0 auto; width: 80px; position:relative; height:80px; border-radius:50%; background-position:center; background-size:cover; background-color:blue; -webkit-box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24);box-shadow:0 1px 3px rgba(0,0,0,.12),0 1px 2px rgba(0,0,0,.24)}
+.mxcc{color:#777}
+.mxcc span, .mxcc strong{color:#333}
+.phonehd{display:none}
+.gradb{padding:20px 0 30px;margin-bottom:30px; border-bottom:1px #aaa solid}
+.hidden{display:none}

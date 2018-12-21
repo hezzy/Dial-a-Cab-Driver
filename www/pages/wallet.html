@@ -1,0 +1,61 @@
+<div class="page" data-name="wallet">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+			<div class="left">
+              <a href="#" class="link icon-only panel-open" data-panel="left">
+                <i class="icon f7-icons ios-only">menu</i>
+                <i class="icon material-icons md-only">menu</i>
+              </a>
+            </div>
+			<div class="title"  style="text-align:center;margin-left:80px">Wallet</div>
+    </div>
+  </div>
+  
+ 
+  
+  
+  <div class="page-content">
+    <div class="text-center" style="background-color:#eee; padding:20px;"><h2><small>Wallet Balance:</small><br><span class="appWallet">appWallet</span></h2>
+	
+	<a href="#" onclick="showwithdraw();" class="button button-raised button-fill wbtn">Withdraw Fund</a>
+	    
+	<div class="list no-hairlines-md" id="withdrawfund">
+	<ul class="hidden toshow">
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-title item-label">Amount</div>
+              <div class="item-input-wrap">
+                <input type="text" name="amount" placeholder=""/>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="item-content item-input">
+            <div class="item-inner">
+              <div class="item-input-wrap">
+			  <div class="wtnotice"></div>
+			  <a href="#" onclick="withdrawfund();" class="col button button-fill chbt">SUBMIT</a>
+				</div>
+            </div>
+          </div>
+        </li>
+		</ul>
+	</div>
+	</div>
+	
+	
+				        
+
+    <div class="block ">
+	<h3>Transaction Record</h3>
+	<div class="list links-list my-list">
+            <ul class="trans">
+
+            </ul>
+          </div>
+    </div>
+  </div>
+</div>
